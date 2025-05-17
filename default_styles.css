@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    color: #E9E9EC;
+    text-decoration: none;
+    font-family: "Taviraj", sans-serif;
+}
+mark{
+    background: none;}
+h1{
+    font-size: 96px;
+    font-weight: 700;
+    font-family: 'Philosopher';}
+h2, h5{
+    font-size: 48px;
+    font-weight: 700;
+    color: #87E7AD;}
+h3{
+    font-size: 30px;
+    font-weight: 700;}
+h4{
+    font-size: 24px;
+    font-weight: 700;}
+p{
+    font-size: 17.5px;
+    font-weight: 400;
+    font-family: 'Mulish';}
+.background{
+    background-repeat: no-repeat;
+    background-size: cover;}
+h5{
+    font-family: 'Philosopher';
+    background: linear-gradient(to top, #87E7AD 30%, #1F565F 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;}
+.frame-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: left;
+    align-items: end;
+    margin: 25px 0 30px 0;}
+        .frame-top, .frame-top-left{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: right;}
+        .frame-top-left{
+            justify-content: left;}
+        .frame-bottom{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: left;}
+        .frame-container .main{
+            display: inline-block;
+            padding: 10px;}
+.Contact{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 120px;}
+        .Contact article{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 80px;}
+                .Contact article section{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;}
+                .Contact nav{
+                    display: flex;
+                    gap: 50px;}
