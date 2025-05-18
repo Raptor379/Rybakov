@@ -63,21 +63,3 @@ h5{
         .frame-container .main{
             display: inline-block;
             padding: 10px;}
-.Contact{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 120px;}
-        .Contact article{
-            display: flex;
-            align-items: start;
-            flex-direction: column;
-            gap: 80px;}
-                .Contact article section{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;}
-                .Contact nav{
-                    display: flex;
-                    gap: 50px;}
