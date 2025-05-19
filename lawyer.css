@@ -19,15 +19,16 @@ body{
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    padding: 0 120px;
+                    padding: clamp(0px, 6.25vw, 120px);
                     flex-wrap: wrap;}
                 .Icon{
                     width: 97px;
                     height: 97px;}
                         header article{
                             display: flex;
+                            flex-wrap: wrap;
                             justify-content: space-between;
-                            width: 390px;}
+                            max-width: 390px;}
                         header ul{
                             display: flex;
                             flex-wrap: wrap;
@@ -50,7 +51,8 @@ body{
             align-items: start;
             max-width: 584px;
             gap: 66px;
-            margin: 112px 0 112px 40px;}
+            margin: 112px 0 112px 0px;
+            margin: clamp(0px, 2.1vw, 40px);}
                         .About span{
                             color: #87E7AD;}
 .Workers{
@@ -68,7 +70,7 @@ body{
             gap: 15px;}
                 .Workers aside{
                     display: flex;
-                    gap: 50px;
+                    gap: 2.6vw;
                     margin: 0 0 10px 0;}
         .worker{
             border-radius: 10px;
@@ -82,7 +84,12 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 105px;
-    padding: 128px 120px;}
+    padding: 128px 120px;
+    padding-top:clamp(0px, 6.7vw, 128px);
+    padding-bottom:clamp(0px, 6.7vw, 128px);
+    padding-left: clamp(0px, 6.25vw, 120px);
+    padding-right: clamp(0px, 6.25vw, 120px);
+}
         .Service article{
             display: flex;
             flex-direction: column;
@@ -106,7 +113,7 @@ body{
                             display: flex;
                             flex-direction: column;
                             align-items: start;
-                            width: 350px;
+                            max-width: 350px;
                             padding: 0px 0px 40px 0px;}
 .Randomize{
     display: flex;
@@ -129,6 +136,7 @@ body{
                             margin: 0 19px;}
 .Contact{
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
     width: 100%;
@@ -144,6 +152,7 @@ body{
                     align-items: start;}
                 .Contact nav{
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 50px;}
                         .Contact .geo{
                             width: 100%;
