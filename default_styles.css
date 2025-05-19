@@ -27,18 +27,7 @@ p{
     font-size: 18px;
     font-weight: 400;
     font-family: 'Arimo';}
-@media(max-width: 1024px){
-    h1{
-        font-size: 64px;}
-    h2, h5{
-        font-size: 32px;}
-    h3{
-        font-size: 20px;}
-    h4{
-        font-size: 16px;}
-    p{
-        font-size: 12px;}
-}
+
 @media(max-width: 300px) {
     h1{
         font-size: 32px;}
@@ -77,8 +66,3 @@ h5{
         .frame-container .main{
             display: inline-block;
             padding: 10px;}
-html {
-  touch-action: pan-x pan-y;
-  /* или */
-  -webkit-text-size-adjust: 100%;
-}
