@@ -20,6 +20,7 @@ body{
                     display: flex;
                     justify-content: space-between;
                     padding: clamp(0px, 6.25vw, 120px);
+                    padding-top: 20px;
                     flex-wrap: wrap;}
                 .Icon{
                     width: 97px;
