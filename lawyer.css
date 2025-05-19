@@ -30,6 +30,7 @@ body{
                             width: 390px;}
                         header ul{
                             display: flex;
+                            flex-wrap: wrap;
                             gap: 50px;
                             list-style: none;}
 .About{
@@ -47,7 +48,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: start;
-            width: 584px;
+            max-width: 584px;
             gap: 66px;
             margin: 112px 0 112px 40px;}
                         .About span{
@@ -71,7 +72,9 @@ body{
                     margin: 0 0 10px 0;}
         .worker{
             border-radius: 10px;
-            box-shadow: #333333 0px 0px 40px;}
+            box-shadow: #333333 0px 0px 40px;
+            width: 70vw;
+            max-width: 600px;}
 .Service{
     background-image: url(images/service_background.svg);
     width: 100%;
@@ -85,7 +88,7 @@ body{
             flex-direction: column;
             align-items: start;
             gap: 50px;
-            width: 590px;}
+            max-width: 590px;}
         .Service .container{
             display: flex;
             justify-content: center;
@@ -93,9 +96,9 @@ body{
             text-indent: 10px;}
                 .Service aside {
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-between;
-                    align-items: start;
-                    width: 100%;}
+                    align-items: start;}
                         .Service .symbol{
                             width: 80px;
                             height: 80px;}
@@ -103,9 +106,11 @@ body{
                             display: flex;
                             flex-direction: column;
                             align-items: start;
-                            width: 350px;}
+                            width: 350px;
+                            padding: 0px 0px 40px 0px;}
 .Randomize{
     display: flex;
+    display: none;
     flex-direction: column;
     gap: 12px;
     padding: 100px 120px 60px 120px;}

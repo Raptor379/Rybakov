@@ -7,14 +7,14 @@
     align-items: center;
     color: #E9E9EC;
     text-decoration: none;
-    font-family: "Taviraj", sans-serif;
+    font-family: "Finlandica";
 }
 mark{
     background: none;}
 h1{
     font-size: 96px;
     font-weight: 700;
-    font-family: 'Philosopher';}
+    font-family: 'Arimo';}
 h2, h5{
     font-size: 48px;
     font-weight: 700;
@@ -28,13 +28,13 @@ h4{
 p{
     font-size: 17.5px;
     font-weight: 400;
-    font-family: 'Mulish';}
+    font-family: 'Arimo';}
 .background{
     background-repeat: no-repeat;
     background-size: cover;}
 h5{
-    font-family: 'Philosopher';
-    background: linear-gradient(to top, #87E7AD 30%, #1F565F 70%);
+    font-family: 'Arimo';
+    background: linear-gradient(45deg, #87E7AD 40%, #1F565F 70%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;}
