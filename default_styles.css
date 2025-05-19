@@ -77,3 +77,8 @@ h5{
         .frame-container .main{
             display: inline-block;
             padding: 10px;}
+html {
+  touch-action: pan-x pan-y;
+  /* или */
+  -webkit-text-size-adjust: 100%;
+}
