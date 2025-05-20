@@ -14,23 +14,19 @@ mark{
 h1{
     font-size: 96px;}
 h2, h5{
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 700;
     color: #87E7AD;}
 h3{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;}
 h4{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;}
 p{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     font-family: 'Arimo';}
-@media(max-width: 300px) {
-    h1{
-        font-size: 32px;}
-}
 .background{
     background-repeat: no-repeat;
     background-size: cover;}
@@ -65,3 +61,5 @@ h5{
         .frame-container .main{
             display: inline-block;
             padding: 10px;}
+img{
+    pointer-events: none;}

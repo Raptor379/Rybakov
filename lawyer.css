@@ -99,13 +99,14 @@ body{
             max-width: 590px;}
         .Service .container{
             display: flex;
-            justify-content: center;
+            justify-content: left;
             width: 100%;
             text-indent: 10px;}
                 .Service aside {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                    width: 100%;
                     align-items: start;}
                         .Service .symbol{
                             width: 80px;
