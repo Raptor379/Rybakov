@@ -347,6 +347,45 @@
                 </div>
             </div>
         </section>
+        <input type="text" id="TextInput" placeholder="Введите сообщение">
+        <button onclick="SaveText()" class="TextButton">Отправить</button>
+        <div id="TextOutput" class="TextOutput">чгш</div>
     </body>
 </html>
+<script>
+    function SaveText() {
+        const TextPool = document.getElementById('TextInput');
+        const Text = TextPool.value;
+        const TextOutput = document.getElementById('TextOutput');
+        const URL = 'https://httpbin.org/post';
+        fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: Text})
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('TextOutput').textContent = 'Succesfully'
+             console.log('Ответ сервера:', data);
+    })
+    .catch(error => {
+        document.getElementById('TextOutput').textContent = 'Ошибка при отправке!';
+        console.error('Ошибка:', error);
+    });
+}
+</script>
+<style>
+    .TextButton{
+        margin: 40px 0px;
+        color: black;}
+    .TextButton:active{
+        background: gray;}
+    .TextOutput{
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        color: black;}
+</style>
 <!--  наводка на фотку всплывание фото карточек -->
