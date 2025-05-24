@@ -69,15 +69,42 @@ body{
             display: flex;
             flex-direction: column;
             gap: 15px;}
-                .Workers aside{
-                    display: flex;
-                    gap: 2.6vw;
-                    margin: 0 0 10px 0;}
-        .worker{
-            border-radius: 10px;
+        .workesdfsdfr{
+            border-radius: 20px;
             box-shadow: #333333 0px 0px 40px;
             width: 70vw;
-            max-width: 600px;}
+            max-width: 550px;}
+        .worker{
+            border-radius: 40px;}
+                .worker .card{
+                    position: relative;
+                    width: 500px;
+                    height: 641px;
+                    transform-style: preserve-3d;
+                    transition: 0.8s;}
+                .worker:hover .card{
+                    transition: 0.8s;
+                    transform: rotateY(180deg);}
+                        .worker .front, .worker .back{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            backface-visibility: hidden; 
+                            border-radius: 20px;}
+                        .worker .front{
+                            background: #000;}
+                        .worker .back{
+                        transform: rotateY(180deg);
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        background: linear-gradient(135deg,rgb(192, 255, 234),#87E7AD,#61CA88,rgb(192, 255, 234));
+                        color: #070612;}
+                                .worker p{
+                                    color: #070612}
+                                .worker img{    
+                                    width: 100%;
+                                    border-radius: 40px;}
 .Service{
     background-image: url(images/service_background.svg);
     width: 100%;
