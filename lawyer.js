@@ -42,6 +42,9 @@ function Sent () {
             Wrong.innerHTML = '*Сообщение содержит запрещенные слова';
         }
     }
+    else {
+        Wrong.style.display = 'none';
+    }
 }
 Button.addEventListener('click', Sent)
 }); 
