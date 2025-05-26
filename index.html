@@ -6,15 +6,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bad-words" defer></script>
+        <script src="lawyer.js"></script>
         <title>Legal Counsel</title>
         <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <!-- Описание страницы -->
-            <meta name="description" content="Адвокат Рыбаков Александр Александрович - юридические услуги по уголовному и судебному праву в Коврове. Помогаем защищать ваши интересы и достигать справедливости.">
+           <meta name="description" content="Адвокатская компания «Legal Counsel» — профессиональные юридические услуги по уголовному, гражданскому и судебному праву в городе Ковров. Защита интересов, консультации и представительство в судах. Индивидуальный подход и надежная поддержка.">
 
-            <!-- Ключевые слова для поисковых систем (по необходимости) -->
-            <meta name="keywords" content="адвокат, юридические услуги, уголовное право, судебное право, защита интересов, Ковров, Рыбаков А.А., Князев">
+            <!-- Ключевые слова -->
+            <meta name="keywords" content="адвокат, юридические услуги, юридическая компания, «Legal Counsel», уголовное право, гражданское право, судебное право, защита интересов, юридическая консультация, Ковров, Рыбаков А.А., адвокатская практика, правовая помощь, юридическая поддержка, оформление документов, семейное право, административное право">
 
             <!-- Автор сайта -->
             <meta name="author" content="Рыбаков А.А.">
@@ -25,7 +27,7 @@
             <!-- Указание поисковикам, что индексировать и следовать по ссылкам -->
             <meta name="robots" content="index, follow" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-            <link rel="icon" href="images/Icon.svg">
+            <link rel="icon" href="images/Icon.svg" type="image/x-icon">
     </head>
     <body>
         <section class="start background">
@@ -40,6 +42,7 @@
                         <li><a href="#Service"><p>Услуги</p></a></li>
                         <li><a href="#Randomize"><p>Компании</p></a></li>
                         <li><a href="#Contact"><p>Контакты</p></a></li>
+                        <li><a href="#Message"><p>Консультация</p></a></li>
                     </ul>
                 </header>
                 <article>
@@ -325,12 +328,6 @@
                         Мобильный +7 (910) 772-78-32
                     </p>
                 </section>
-                <nav>
-                    <img src="images/Workers_facebook.svg" alt="">
-                    <img src="images/Workers_instagram.svg" alt="">
-                    <img src="images/instagram.svg" alt="">
-                    <img src="images/Workers_gmail.svg" alt="">
-                </nav>
             </article>
             <div class="frame-container">
                 <div class="frame-top">
@@ -350,45 +347,20 @@
                 </div>
             </div>
         </section>
-        <input type="text" id="TextInput" placeholder="Введите сообщение">
-        <button onclick="SaveText()" class="TextButton">Отправить</button>
-        <div id="TextOutput" class="TextOutput">чгш</div>
+        <nav id="Message">
+            <div>
+                <h5>Обратитесь к нам</h5>
+                <h4>Получите квалифицированный ответ на ваш вопрос от нашего эексперта</h4>  
+            </div>  
+            <aside>
+                <textarea placeholder="Расскажите чем мы вам можем помочь" id="MessagePool"></textarea>
+                <button id="MessageButton">
+                    <div class="inside">
+                        <h3>Отправить</h3>
+                    </div>
+                </button>
+            </aside>
+            <h4 id="MessageWrong">dsfsddsdggs</h4>
+        </nav>
     </body>
 </html>
-<script>
-    function SaveText() {
-        const TextPool = document.getElementById('TextInput');
-        const Text = TextPool.value;
-        const TextOutput = document.getElementById('TextOutput');
-        const URL = 'https://httpbin.org/post';
-        fetch(URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ message: Text})
-        })
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('TextOutput').textContent = 'Succesfully'
-             console.log('Ответ сервера:', data);
-    })
-    .catch(error => {
-        document.getElementById('TextOutput').textContent = 'Ошибка при отправке!';
-        console.error('Ошибка:', error);
-    });
-}
-</script>
-<style>
-    .TextButton{
-        margin: 40px 0px;
-        color: black;}
-    .TextButton:active{
-        background: gray;}
-    .TextOutput{
-        background-color: purple;
-        width: 100px;
-        height: 100px;
-        color: black;}
-</style>
-<!--  наводка на фотку всплывание фото карточек -->

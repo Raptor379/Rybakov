@@ -8,6 +8,7 @@
     color: #E9E9EC;
     text-decoration: none;
     font-family: "Finlandica";
+    resize: none;
 }
 mark{
     background: none;}
@@ -23,19 +24,38 @@ h3{
 h4{
     font-size: 30px;
     font-weight: 700;}
-p{
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Arimo';}
-.background{
-    background-repeat: no-repeat;
-    background-size: cover;}
 h5{
     font-family: 'Arimo';
     background: linear-gradient(45deg, #87E7AD 40%, #1F565F 70%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;}
+p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo';}
+button{
+    display: flex;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #87E7AD 40%, #1F565F 70%);
+    cursor: pointer;}
+        button .inside{
+            margin: 15px 15px;
+            padding: 20px 20px;
+            border-radius: 5px;
+            background-color: #0706129c;
+            transition: 0.3s;}
+        button:hover .inside{
+            background-color: #070612d8;
+            transition: 0.3s;}
+        button:active .inside{
+            background-color: #15123a;
+            transition: 0.3s;}
+        button:active .inside h3{
+            color: #87E7AD;}
+.background{
+    background-repeat: no-repeat;
+    background-size: cover;}
 .frame-container{
     display: inline-flex;
     position: relative;

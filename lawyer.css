@@ -69,11 +69,6 @@ body{
             display: flex;
             flex-direction: column;
             gap: 15px;}
-        .workesdfsdfr{
-            border-radius: 20px;
-            box-shadow: #333333 0px 0px 40px;
-            width: 70vw;
-            max-width: 550px;}
         .worker{
             border-radius: 40px;}
                 .worker .card{
@@ -91,8 +86,6 @@ body{
                             height: 100%;
                             backface-visibility: hidden; 
                             border-radius: 20px;}
-                        .worker .front{
-                            background: #000;}
                         .worker .back{
                         transform: rotateY(180deg);
                         width: 100%;
@@ -122,7 +115,6 @@ body{
             display: flex;
             flex-direction: column;
             align-items: start;
-            gap: 50px;
             max-width: 590px;}
         .Service .container{
             display: flex;
@@ -142,7 +134,7 @@ body{
                             display: flex;
                             flex-direction: column;
                             align-items: start;
-                            max-width: 350px;
+                            max-width: 500px;
                             padding: 0px 0px 40px 0px;}
 .Randomize{
     display: flex;
@@ -186,3 +178,31 @@ body{
                         .Contact .geo{
                             width: 100%;
                             height: 100%;}
+#Message{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    padding-left: clamp(10px, 5%, 120px);
+    padding-right: clamp(10px, 5%, 120px);
+    padding-bottom: clamp(10px, 5%, 120px);}
+        #Message aside{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;}
+                #Message textarea{
+                    overflow: hidden;
+                    outline: none;
+                    width: 1022px;
+                    min-height: 300px;
+                    background-color: #d8fff0;
+                    color: #070612;
+                    font-size: 30px;
+                    border: 15px solid transparent;
+                    border-image: linear-gradient(45deg, #87E7AD 40%, #1F565F 70%) 1;}
+        #MessageWrong{
+            display: none;
+            color: rgb(255, 60, 60);}
